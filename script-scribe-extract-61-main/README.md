@@ -74,20 +74,33 @@ Medical-Prescription-OCR/
 ## 📊 Sample Visualizations
 
 ### Sample Characters from EMNIST  
-![Sample Characters](assets/screenshots/emnist_samples.png)
+![image](https://github.com/user-attachments/assets/f7304ee7-8a22-4ab8-ada2-ffb3269fb4fa)
 
-### Class Distribution  
-![Class Distribution](assets/screenshots/class_distribution.png)
-
----
 
 ## 🖼️ Website Screens
 
-| Upload Page | OCR Result | Dashboard |
-|-------------|------------|-----------|
-| ![Upload](assets/screenshots/upload.png) | ![Result](assets/screenshots/result.png) | ![Dashboard](assets/screenshots/dashboard.png) |
+### ●	Homepage layout
+![image](https://github.com/user-attachments/assets/1c5f9b3f-26d9-41bd-ba6f-7e4e187dcdd8)
 
----
+### ●	Output text viewer
+![image](https://github.com/user-attachments/assets/0f8fb8bc-63f7-48fc-8a36-8d22b38ed2f2)
+
+ ### ●	Sign In / Sign Up interfaces
+ 
+![image](https://github.com/user-attachments/assets/1360ea86-08c9-4b59-824d-4f7f8077d2a2)
+
+### ●	History dashboard view
+![image](https://github.com/user-attachments/assets/5a86a913-f474-4324-936e-815b574ea2ee)
+
+### ●	User Guide
+![image](https://github.com/user-attachments/assets/0de2b985-f2d8-4256-9845-3f4e8d80927b)
+
+### ●	About Page
+![image](https://github.com/user-attachments/assets/558b1896-8254-4370-aadf-dbaa78846fe5)
+
+### ●	Contact Us page
+![image](https://github.com/user-attachments/assets/52caaf73-9cd4-44df-aff9-9e92eeb80011)
+
 
 ## 🔮 Future Enhancements
 
