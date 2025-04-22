@@ -1,73 +1,132 @@
-# Welcome to your Lovable project
+# 🩺 Medical Prescription OCR
 
-## Project info
+A static web-based simulation and deep learning prototype to digitize handwritten medical prescriptions using Optical Character Recognition (OCR) techniques and a CNN model trained on the EMNIST dataset.
 
-**URL**: https://lovable.dev/projects/20c4f81d-6916-402b-a2a4-19a63c90898a
+---
 
-## How can I edit this code?
+## 📌 Project Overview
 
-There are several ways of editing your application.
+This project addresses the widespread issue of illegible handwritten medical prescriptions. It simulates an OCR tool via a clean static web interface and uses a deep learning model for character recognition in an offline environment. It demonstrates how AI can improve healthcare readability and safety.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/20c4f81d-6916-402b-a2a4-19a63c90898a) and start prompting.
+## 🧠 Core Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- Upload handwritten prescription images (JPEG/PNG).
+- Simulated OCR output using JavaScript.
+- Sign In / Sign Up interface with session-based scan history.
+- CNN model trained on the EMNIST dataset.
+- Complete handwriting recognition pipeline using OpenCV and TensorFlow.
+- Modular, responsive frontend UI.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Technologies Used
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Frontend
+- HTML5, CSS3, JavaScript
+- Bootstrap (UI styling)
+- LocalStorage (scan history simulation)
 
-Follow these steps:
+### Backend (Prototype/Offline)
+- TensorFlow, Keras
+- EMNIST Dataset
+- OpenCV (image preprocessing)
+- Python, Jupyter Notebook
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📦 Project Structure
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```plaintext
+Medical-Prescription-OCR/
+│
+├── model_training/
+│   └── Medical_Prescription_OCR.ipynb
+│
+├── website/
+│   ├── index.html
+│   ├── how-it-works.html
+│   ├── about.html
+│   ├── contact.html
+│   ├── css/
+│   └── js/
+│
+├── assets/
+│   ├── screenshots/
+│   └── logo/
+│
+├── README.md
+└── LICENSE
 ```
+## 📈 Model Performance
 
-**Edit a file directly in GitHub**
+- **Dataset**: EMNIST (Balanced Split)  
+- **Input Size**: 28x28 grayscale images  
+- **Architecture**: Multi-layer CNN  
+- **Test Accuracy**: ~85%  
+- **Epochs**: 20  
+- **Optimizer**: Adam  
+- **Loss Function**: Categorical Crossentropy  
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📊 Sample Visualizations
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Sample Characters from EMNIST  
+![Sample Characters](assets/screenshots/emnist_samples.png)
 
-## What technologies are used for this project?
+### Class Distribution  
+![Class Distribution](assets/screenshots/class_distribution.png)
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🖼️ Website Screens
 
-## How can I deploy this project?
+| Upload Page | OCR Result | Dashboard |
+|-------------|------------|-----------|
+| ![Upload](assets/screenshots/upload.png) | ![Result](assets/screenshots/result.png) | ![Dashboard](assets/screenshots/dashboard.png) |
 
-Simply open [Lovable](https://lovable.dev/projects/20c4f81d-6916-402b-a2a4-19a63c90898a) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 🔮 Future Enhancements
 
-Yes, you can!
+- Integration of real-time backend model with Flask or FastAPI  
+- Deployment of trained model using TensorFlow Lite (mobile support)  
+- Drug information lookup and NER (Named Entity Recognition)  
+- Multilingual support (Hindi, Gujarati, etc.)  
+- Mobile app using Flutter or React Native  
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 💡 How to Run the Notebook
+
+### Clone the repository:
+```bash
+git clone https://github.com/yourusername/Medical-Prescription-OCR.git
+cd Medical-Prescription-OCR/model_training
+```
+## 🚀 Open the Notebook
+
+```bash
+jupyter notebook Medical_Prescription_OCR.ipynb
+```
+## 🔧 Install Dependencies
+
+Before running the notebook, ensure you have the required libraries installed:
+
+```bash
+pip install tensorflow tensorflow-datasets opencv-python matplotlib seaborn
+```
+## ▶️ Run the Notebook Step-by-Step
+This Jupyter Notebook walks you through the complete pipeline:
+
+✅ Load and visualize the EMNIST dataset
+
+🛠️ Preprocess handwritten characters
+
+🧠 Build and train a Convolutional Neural Network (CNN)
+
+🧪 Simulate OCR prediction on sample inputs
+
+
